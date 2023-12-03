@@ -3,4 +3,4 @@
  *
  * @author jinyueWang
  */
-package com.w08e.xiaomai.order;
+package com.w08e.xiaomai.infrastructure.config;
