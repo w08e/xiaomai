@@ -4,7 +4,6 @@ import com.w08e.xiaomai.domain.share.enums.PayType;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.io.Serializable;
 import java.time.OffsetDateTime;
 
 /**

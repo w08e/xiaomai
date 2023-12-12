@@ -4,7 +4,6 @@ import com.w08e.xiaomai.domain.aggregate.userdomain.UserAddress;
 import com.w08e.xiaomai.domain.aggregate.userdomain.UserPayment;
 import lombok.Builder;
 import lombok.Data;
-import lombok.Setter;
 
 import java.time.OffsetDateTime;
 import java.util.List;

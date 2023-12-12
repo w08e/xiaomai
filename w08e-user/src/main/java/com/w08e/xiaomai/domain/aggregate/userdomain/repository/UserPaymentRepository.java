@@ -1,11 +1,9 @@
 package com.w08e.xiaomai.domain.aggregate.userdomain.repository;
 
 
-import ch.qos.logback.classic.spi.EventArgUtil;
 import com.querydsl.core.types.Predicate;
 import com.querydsl.jpa.impl.JPAQuery;
 import com.querydsl.jpa.impl.JPAQueryFactory;
-
 import com.w08e.xiaomai.domain.aggregate.userdomain.UserPayment;
 import com.w08e.xiaomai.domain.aggregate.userdomain.convert.UserMapper;
 import com.w08e.xiaomai.infrastructure.db.model.QUserPaymentEntity;
@@ -13,9 +11,9 @@ import com.w08e.xiaomai.infrastructure.db.model.UserPaymentEntity;
 import org.springframework.stereotype.Repository;
 import org.springframework.util.CollectionUtils;
 
-
 import javax.persistence.EntityManager;
-import java.util.*;
+import java.util.List;
+import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 

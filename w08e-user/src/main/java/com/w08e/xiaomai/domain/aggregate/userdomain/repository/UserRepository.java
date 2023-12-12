@@ -8,7 +8,7 @@ import com.w08e.xiaomai.domain.aggregate.userdomain.User;
 import com.w08e.xiaomai.domain.aggregate.userdomain.UserAddress;
 import com.w08e.xiaomai.domain.aggregate.userdomain.UserPayment;
 import com.w08e.xiaomai.domain.aggregate.userdomain.convert.UserMapper;
-import com.w08e.xiaomai.infrastructure.db.model.*;
+import com.w08e.xiaomai.infrastructure.db.model.UserEntity;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;

@@ -1,4 +1,4 @@
 /**
  * controller
  */
-package src.main.java.com.w08e.xiaomai.api;
+package com.w08e.xiaomai.api;

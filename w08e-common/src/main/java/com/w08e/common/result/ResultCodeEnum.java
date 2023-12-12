@@ -1,8 +1,6 @@
 package com.w08e.common.result;
 
-import lombok.Data;
 import lombok.Getter;
-import lombok.Setter;
 
 import javax.servlet.http.HttpServletResponse;
 
