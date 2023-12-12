@@ -15,8 +15,9 @@
 
     <modules>
         <module>w08e-common</module>
-        <module>w08e-service</module>
-        <module>GenerateCase</module>
+        <module>w08e-user</module>
+        <module>w08e-order</module>
+        <module>w08e-pay</module>
     </modules>
 
 
