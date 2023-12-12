@@ -1,4 +1,4 @@
-package com.w08e.xiaomai.domain.aggregate.userdomain.entity;
+package com.w08e.xiaomai.infrastructure.db.model;
 
 import com.w08e.xiaomai.common.result.BaseEntity;
 import lombok.Data;

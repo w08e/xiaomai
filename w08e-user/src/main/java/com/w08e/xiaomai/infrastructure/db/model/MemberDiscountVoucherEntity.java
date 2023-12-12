@@ -1,6 +1,5 @@
-package com.w08e.xiaomai.domain.aggregate.userdomain.entity;
+package com.w08e.xiaomai.infrastructure.db.model;
 
-import com.w08e.xiaomai.common.result.BaseEntity;
 import lombok.Data;
 import org.hibernate.annotations.Comment;
 
@@ -9,6 +8,7 @@ import java.time.OffsetDateTime;
 
 /**
  * 会员折扣表
+ *
  * @Author: jinyuewang
  * @Date: 2023/12/3 18:04
  */
