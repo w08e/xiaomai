@@ -1,4 +1,4 @@
-package com.w08e.xiaomai.domain.aggregate.userdomain.entity;
+package com.w08e.xiaomai.infrastructure.db.model;
 
 import com.w08e.xiaomai.common.result.BaseEntity;
 import lombok.Data;
@@ -12,8 +12,8 @@ import javax.persistence.*;
  */
 @Data
 @Entity
-@Table(name = "user_adress")
-public class UserAdressEntity extends BaseEntity {
+@Table(name = "user_address")
+public class UserAdresssEntity extends BaseEntity {
 
     @Id
     @Column(name = "id")

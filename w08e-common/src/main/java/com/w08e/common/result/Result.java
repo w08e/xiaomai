@@ -1,5 +1,4 @@
-package com.w08e.xiaomai.common.result;
-
+package com.w08e.common.result;
 
 
 import lombok.Getter;
@@ -31,10 +30,12 @@ public class Result<T> implements Serializable {
         this.success = success;
         this.init();
     }
+
     public Result(T data) {
         this.data = data;
         this.init();
     }
+
     public Result(boolean success,
                   T data) {
         this.success = success;
@@ -65,7 +66,6 @@ public class Result<T> implements Serializable {
     }
 
 
-
     /**
      * 通用成功回包
      *
@@ -94,8 +94,6 @@ public class Result<T> implements Serializable {
     }
 
 
-
-
     public static <T> Result<T> fail(ResultCodeEnum codeEnum) {
         Result<T> result = new Result<>();
         result.success = false;
@@ -103,6 +101,7 @@ public class Result<T> implements Serializable {
         result.message = codeEnum.getMessage();
         return result;
     }
+
     public static <T> Result<T> fail(ResultCodeEnum codeEnum, T data) {
         Result<T> result = new Result<>();
         result.success = false;
@@ -113,7 +112,7 @@ public class Result<T> implements Serializable {
     }
 
 
-    public static <T> Result<T> fail(int code,String message) {
+    public static <T> Result<T> fail(int code, String message) {
         Result<T> result = new Result<>();
         result.success = false;
         result.code = code;
@@ -121,7 +120,7 @@ public class Result<T> implements Serializable {
         return result;
     }
 
-    public static <T> Result<T> fail(int code,String message, T data) {
+    public static <T> Result<T> fail(int code, String message, T data) {
         Result<T> result = new Result<>();
         result.success = false;
         result.code = code;
@@ -131,17 +130,12 @@ public class Result<T> implements Serializable {
     }
 
 
-
-
-
-
-
     /**
      * 通用成功回包
      *
      * @return result
      */
-    public  Result<String> onSuccess() {
+    public Result<String> onSuccess() {
         Result<String> result = new Result<>();
         result.success = true;
         result.code = ResultCodeEnum.SUCCESS.getCode();
@@ -154,7 +148,7 @@ public class Result<T> implements Serializable {
      *
      * @return result
      */
-    public  <T> Result<T> onSuccess(T data) {
+    public <T> Result<T> onSuccess(T data) {
         Result<T> result = new Result<>();
         result.success = true;
         result.code = ResultCodeEnum.SUCCESS.getCode();
@@ -164,42 +158,40 @@ public class Result<T> implements Serializable {
     }
 
 
-
-
-    public  <T> Result<T> onFail(ResultCodeEnum codeEnum) {
+    public <T> Result<T> onFail(ResultCodeEnum codeEnum) {
 
         this.success = false;
         this.code = codeEnum.getCode();
-        ((Result<T>)this).message = codeEnum.getMessage();
-        return ((Result<T>)this);
+        ((Result<T>) this).message = codeEnum.getMessage();
+        return ((Result<T>) this);
     }
-    public  <T> Result<T> onFail(ResultCodeEnum codeEnum, T data) {
+
+    public <T> Result<T> onFail(ResultCodeEnum codeEnum, T data) {
 
         this.success = false;
         this.code = codeEnum.getCode();
         this.message = codeEnum.getMessage();
-        ((Result<T>)this).data = data;
-        return ((Result<T>)this);
+        ((Result<T>) this).data = data;
+        return ((Result<T>) this);
     }
 
 
-    public  <T> Result<T> onFail(int code,String message) {
+    public <T> Result<T> onFail(int code, String message) {
 
         this.success = false;
         this.code = code;
         this.message = message;
-        return (Result<T>)this;
+        return (Result<T>) this;
     }
 
-    public  <T> Result<T> onFail(int code,String message, T data) {
+    public <T> Result<T> onFail(int code, String message, T data) {
 
         this.success = false;
         this.code = code;
         this.message = message;
-        ((Result<T>)this).data = data;
-        return (Result<T>)this;
+        ((Result<T>) this).data = data;
+        return (Result<T>) this;
     }
-
 
 
     private void init() {
